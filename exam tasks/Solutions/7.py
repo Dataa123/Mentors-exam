@@ -10,6 +10,7 @@ def gap(g, m, n):
     for i in range(m, n):
         if prime(i) and prime(i + g):
             return [i, i + g]
+    return None
         
 print(gap(6, 585348, 685348)) # [585437, 585443]
 print(gap(8, 585348, 685348)) # [585383, 585391]
